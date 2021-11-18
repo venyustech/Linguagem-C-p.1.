@@ -1,0 +1,54 @@
+/* ************************************************************************ *
+*    HIGHER BETWEEN,2018                                                   *
+*    This program will show you the higher between three values            *
+*                                                                          *
+*    Copyright (C) 2018 by Gardenia Georgia Barbosa de Siqueira            *
+*                                                                          *
+*    This program is free software; you can redistribute it and/or modify  *
+*    it under the terms of the GNU General Public License as published by  *
+*    the Free Software Foundation; either version 2 of the License, or     *
+*    (at your option) any later version.                                   *
+*                                                                          *
+*    This program is distributed in the hope that it will be useful,       *
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+*    GNU General Public License for more details.                          *
+*                                                                          *
+*    You should have received a copy of the GNU General Public License     *
+*    along with this program; if not, write to the                         *
+*    Free Software Foundation, Inc.,                                       *
+*    59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+*                                                                          *
+*    To contact the author, please write to:                               *
+*    Gardenia Georgia Barbosa de Siqueira <gardenia.georgia.b.s@gmail.com> *
+*    Webpage: http://www.upe.com                                           *
+*    Phone: +55 (81) 99785-0393                                            *
+* ************************************************************************ *
+* 
+*/
+
+algoritmo higher_between;
+variáveis
+    a, b, c: real;
+fim-variáveis
+
+início
+    imprima("Bem-vindo ao programa que te mostra o maior entre três valores"); /* Boa-vindas ao usuário */
+    /* entrada de dados: */
+    imprima("Digite o valor de a: ");
+    a:= leia();
+    imprima("Digite o valor de b: ");
+    b:= leia();
+    imprima("Digite o valor de c: ");
+    c:= leia();
+    /*Descobrindo o maior valor usando conectivos lógicos:*/
+    se (a>b)e(a>c) então
+        imprima("O maior valor é: ",a);
+    senão
+        se (b>a)e(b>c) então
+            imprima("O maior valor é: ",b);
+        senão
+            imprima("O maior valor é: ",c);
+        fim-se
+    fim-se
+fim

@@ -1,1 +1,1 @@
-# Linguagem-C-p.1.
+Este programa serve para base de conhecimento.
